@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Denis Ibragimov · CV</title>
+<meta name="description" content="CV of Denis Ibragimov: Engineering Manager, Technical Lead, Solution Architect, Technical Project Manager.">
+<meta name="theme-color" content="#04060d">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .cv { max-width: 900px; margin: 90px auto 60px; padding: 48px 56px; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; max-width: 900px; margin: 0 auto; padding: 0 16px; }
+  .cv h1 { font-size: clamp(30px, 5vw, 44px); letter-spacing: 0.04em; text-transform: uppercase; }
+  .cv .title { color: var(--cyan); font-weight: 600; margin: 6px 0 10px; }
+  .cv .contact { font: 13px var(--mono); color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .cv h2 { font: 600 13px var(--mono); letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); margin: 38px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .cv p, .cv li { color: #c9d3e3; font-size: 15px; }
+  .cv ul { padding-left: 18px; margin: 6px 0 0; }
+  .cv li { margin: 4px 0; }
+  .cv b { color: var(--text); }
+  .cv .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .cv .hl { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+  .cv .hl b { color: var(--amber); display: block; }
+  .cv .hl span { color: var(--muted); font-size: 13px; }
+  .cv table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .cv td { padding: 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; color: #c9d3e3; }
+  .cv td:first-child { width: 220px; font-weight: 600; color: var(--text); padding-right: 18px; }
+  .job { margin-top: 22px; }
+  .job .head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+  .job h3 { font-size: 17px; font-weight: 600; }
+  .job .when { font: 12px var(--mono); color: var(--amber); }
+  .job .org { color: var(--cyan); font-size: 14px; }
+  .job .org i { color: var(--dim); font-style: normal; }
+  .job h4 { font: 600 12px var(--mono); color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin: 12px 0 0; }
+  @media (max-width: 700px) {
+    .cv { padding: 28px 20px; margin-top: 80px; }
+    .cv .grid { grid-template-columns: 1fr; }
+    .cv td { display: block; width: auto !important; border: 0; padding: 2px 0; }
+    .cv tr { display: block; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  }
+  @media print {
+    @page { margin: 14mm; }
+    body { background: #fff; color: #111; font-size: 12px; }
+    #space, .nebula, .vignette, .nav, .toolbar { display: none !important; }
+    .cv { margin: 0; padding: 0; max-width: none; border: 0; background: none; backdrop-filter: none; }
+    .cv::before, .cv::after { display: none; }
+    .cv p, .cv li, .cv td, .cv b, .cv .hl span, .cv .contact { color: #222 !important; }
+    .cv h1 { color: #0d2a4a; }
+    .cv .title, .job .org { color: #1f6a96; }
+    .cv h2, .job .when, .cv .hl b { color: #1f6a96; border-color: #1f6a96; }
+    .cv td, .cv .hl { border-color: #ccd5e0; }
+    .cv a { color: #1f6a96; }
+    .job { break-inside: avoid; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="nebula"></div>
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">DI<span>//</span>H0USE</a>
+    <ul><li><a href="index.html">← Home</a></li></ul>
+  </div>
+</nav>
+
+<div class="toolbar" style="margin-top:84px">
+  <a class="btn" href="index.html">← Back</a>
+  <button class="btn primary" onclick="window.print()">Save as PDF</button>
+</div>
+
+<main class="cv hud" style="margin-top:20px">
+  <h1>Denis Ibragimov</h1>
+  <div class="title">Engineering Manager · Technical Lead · Solution Architect · Technical Project Manager</div>
+  <div class="contact">
+    <span>Sydney, Australia · Australian citizen</span>
+    <a href="mailto:da.ibragimov@gmail.com">da.ibragimov@gmail.com</a>
+    <a href="https://www.linkedin.com/in/h0uzer/">linkedin.com/in/h0uzer</a>
+    <a href="https://github.com/h0useRus">github.com/h0useRus</a>
+  </div>
+
+  <h2>Professional summary</h2>
+  <p>Engineering leader with 20+ years in software and 13+ years leading teams. I combine people leadership, hands-on architecture and delivery management. At MySale Group (OzSale) I led a ten-year modernisation from a monolith to cloud-native microservices. I owned the roadmap, architecture governance and delivery, and grew engineering from 4 to 128 engineers.</p>
+  <p>I work equally well as an <b>Engineering Manager</b> building teams and culture, a <b>Technical Lead</b> setting standards and reviewing code, a <b>Solution Architect</b> designing secure, event-driven platforms on AWS and Azure, and a <b>Technical Project Manager</b> running roadmaps, risks and Agile delivery. Deep hands-on expertise in .NET, Kafka, Kubernetes and DevOps. Trusted adviser to the CEO, CPO and CISO.</p>
+
+  <h2>Career highlights</h2>
+  <div class="grid">
+    <div class="hl"><b>75% faster releases</b><span>monthly to several per week; 3x traffic growth</span></div>
+    <div class="hl"><b>99.9% uptime</b><span>at peak trading; MTTD −65%, MTTR −50%</span></div>
+    <div class="hl"><b>35% lower cloud cost</b><span>right-sizing, containers, autoscaling</span></div>
+    <div class="hl"><b>4x deployment frequency</b><span>and 60% lower change failure rate</span></div>
+    <div class="hl"><b>22% mobile conversion uplift</b><span>40% faster pages after React replatform</span></div>
+    <div class="hl"><b>Test coverage 45% → 80%</b><span>regression cycle time halved at Kindred</span></div>
+  </div>
+
+  <h2>Core competencies</h2>
+  <table>
+    <tr><td>Engineering management</td><td>Engineering strategy and roadmaps, organisational transformation, hiring and scaling teams (4 to 128 engineers), mentoring, distributed and offshore teams, performance and career growth, incident response, 24/7 operational readiness</td></tr>
+    <tr><td>Technical leadership</td><td>Coding standards, code review culture, design forums, shared libraries, branching and release strategy, test automation, hands-on .NET development, AI-assisted engineering (GitHub Copilot, Microsoft Copilot)</td></tr>
+    <tr><td>Solution architecture</td><td>Microservices, event-driven architecture (Kafka), REST APIs, domain-driven design, CQRS, secure service design (OAuth 2.0, RBAC), legacy migration, data lake and ETL/ELT pipelines, performance tuning</td></tr>
+    <tr><td>Technical project management</td><td>Agile/Scrum (certified), Waterfall, quarterly roadmaps, risk management, stakeholder and executive reporting, delivery metrics (velocity, deployment frequency, change failure rate), vendor and third-party integration, R&amp;D and technology evaluation</td></tr>
+    <tr><td>Languages and frameworks</td><td>C#, .NET 11 / .NET Core / .NET Framework, ASP.NET Core, EF Core, WCF, React, TypeScript, JavaScript, ML.NET, Rust</td></tr>
+    <tr><td>Cloud and DevOps</td><td>AWS, Azure, Docker, Kubernetes, Terraform, CloudFormation, CI/CD (TeamCity, Octopus, GitHub, Azure DevOps, AWS CodePipeline)</td></tr>
+    <tr><td>Data</td><td>PostgreSQL, SQL Server / Azure SQL, Oracle, MongoDB, DynamoDB, Couchbase, Snowflake, Elastic</td></tr>
+    <tr><td>Observability</td><td>Grafana, Elastic/Kibana, New Relic, Dynatrace, Splunk</td></tr>
+  </table>
+
+  <h2>Professional experience</h2>
+
+  <div class="job">
+    <div class="head"><h3>Engineering Manager / Team Lead</h3><span class="when">May 2023 – Present</span></div>
+    <div class="org">Kindred Group (Unibet) <i>· Sydney · Online gaming and sports betting</i></div>
+    <p>Joined as Senior Developer and was promoted to Engineering Manager. I lead a distributed team of 5 engineers across time zones on high-scale, event-driven services.</p>
+    <ul>
+      <li>Defined and led the migration of the legacy platform to modern .NET, upgrading through each release up to .NET 11, aligned with product and platform roadmaps</li>
+      <li>Designed the new platform architecture on Kafka, PostgreSQL and Kubernetes, processing millions of transactions a day</li>
+      <li>Integrated high-performance third-party game statistics providers</li>
+      <li><b>Raised automated test coverage from 45% to 80%</b> and cut regression cycle time by 50%</li>
+      <li>Built Elastic and Grafana dashboards that improved production monitoring and troubleshooting</li>
+      <li>Introduced GitHub Copilot and Microsoft Copilot to the team, with guidelines for safe AI-assisted development</li>
+      <li>Worked with data science teams to consume machine-learning models through ML.NET</li>
+      <li>Own quarterly roadmaps and stakeholder communication; advise product and platform leadership on modernisation priorities and risk</li>
+      <li>Run tech seminars on new stack innovations and develop shared internal libraries</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="head"><h3>Team Lead</h3><span class="when">Dec 2022 – Apr 2023</span></div>
+    <div class="org">eQ8 <i>· Strategic workforce planning SaaS</i></div>
+    <ul>
+      <li><b>Established the v2.0 platform architecture</b>, engineering standards and delivery model from scratch; first release in 12 weeks</li>
+      <li>Led a full-stack team of 4–5 developers using Scrum; <b>sprint velocity up 30%</b> within two quarters</li>
+      <li>Introduced architecture governance and coding standards on .NET 7, Azure, MongoDB and Kubernetes</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="head"><h3>Senior Security Developer</h3><span class="when">Sep 2022 – Dec 2022</span></div>
+    <div class="org">Simpology <i>· Mortgage technology</i></div>
+    <ul><li>Led the secure back-end integration with Commonwealth Bank home loan APIs on AWS, using .NET Core, Terraform and MySQL</li></ul>
+  </div>
+
+  <div class="job">
+    <div class="head"><h3>Engineering Manager, Head of Platform Engineering and Enterprise Architect</h3><span class="when">Jun 2012 – Aug 2022</span></div>
+    <div class="org">MySale Group PLC (OzSale) <i>· Sydney · Online retail marketplace with 12 e-shops across Australia, New Zealand and South-East Asia · 500K+ monthly active users · $50M annual GMV</i></div>
+    <p>End-to-end accountability for platform engineering: roadmap, architecture governance, engineering standards and delivery across all back-end services and customer applications.</p>
+    <h4>Engineering management</h4>
+    <ul>
+      <li><b>Built and scaled cross-functional engineering teams from 4 to 128 engineers</b>, with a culture of code quality, knowledge sharing and operational excellence</li>
+      <li>Partnered with the CEO, CPO and CISO to align technology investment with business priorities and risk</li>
+    </ul>
+    <h4>Solution architecture</h4>
+    <ul>
+      <li>Architected the migration from a monolith to secure cloud-native microservices, synchronising business entities across more than 100 databases; <b>75% faster releases and 3x traffic capacity</b></li>
+      <li>Implemented OAuth 2.0 and RBAC across all services; supported compliance audits and <b>cut security incidents by 70%</b></li>
+      <li>Designed an enterprise data lake with ETL/ELT pipelines and data governance for BI and reporting</li>
+      <li>Built a marketing platform on Kubernetes sending billions of push notifications and thousands of Facebook campaigns a month</li>
+      <li>Documented architecture standards, practices and reference patterns for all teams</li>
+    </ul>
+    <h4>Delivery and operations</h4>
+    <ul>
+      <li>Drove AWS and Azure adoption with Kubernetes and infrastructure as code; <b>infrastructure costs down 35%</b>, deployment incidents down 55%</li>
+      <li>Replatformed web shops from WebForms to React/TypeScript: <b>40% faster page loads, 22% higher mobile conversion</b></li>
+      <li>Introduced New Relic and Dynatrace observability: <b>MTTD down 65%, MTTR down 50%, 99.9% uptime</b> at peak trading</li>
+      <li>Improved branching, code review, xUnit/NUnit automation and CI/CD (TeamCity, Octopus): <b>4x deployment frequency, 60% lower change failure rate</b></li>
+      <li>Ran an R&amp;D programme delivering 8+ technology evaluations a year with adoption recommendations</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="head"><h3>Team Lead</h3><span class="when">Dec 2011 – Jun 2012</span></div>
+    <div class="org">MySale Group PLC (OzSale)</div>
+    <ul>
+      <li>Led 5 engineers building the shared core libraries used by all WCF and Web API services</li>
+      <li>Managed the UI team and 24/7 monitoring of online shops across 10 time zones</li>
+      <li>Coordinated server-side APIs with the mobile team in Manila</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="head"><h3>Lead Developer</h3><span class="when">Oct 2009 – Dec 2011</span></div>
+    <div class="org">MySale Group PLC (OzSale)</div>
+    <ul><li>Designed the client-facing web services API that launched OzSale's first iOS app, with page loads under 2 seconds; the API remained a core part of the later microservice platform</li></ul>
+  </div>
+
+  <div class="job">
+    <div class="head"><h3>Earlier career</h3><span class="when">1997 – 2009</span></div>
+    <div class="org">Saint Petersburg, Russia</div>
+    <ul>
+      <li><b>Exigen Services</b> — Senior Developer (2008–2009): offshore e-commerce development for a US retailer under certified Scrum 2.0</li>
+      <li><b>Bridge-Quest Labs</b> — Senior Developer (2006–2008): performance-critical SDKs and WPF systems for US government clients</li>
+      <li><b>TELROS</b> — Senior Developer and Lead UI Developer (2003–2006): .NET PBX configuration software for a telecom provider</li>
+      <li><b>Arcadia</b> — Chief QA Engineer (2000–2002); earlier roles as software developer, network administrator and university lecturer in computer systems</li>
+    </ul>
+  </div>
+
+  <h2>Open-source projects</h2>
+  <p>I build and maintain free desktop tools in Rust in my own time, from architecture and UI through to releases and project websites.</p>
+  <ul>
+    <li><b><a href="https://h0userus.github.io/joystick-gobloon/">Joystick Gobloon</a></b> — Free joystick mapper for Windows and Linux. It combines device hiding, virtual joysticks (vJoy, uinput) and input mapping in one app, and imports Joystick Gremlin profiles.</li>
+    <li><b><a href="https://h0userus.github.io/keyboard-gobloon/">Keyboard Gobloon</a></b> — Lightweight replacement for the Windows language switcher. It fixes text typed in the wrong layout and typos, and optimises AI prompts locally.</li>
+  </ul>
+
+  <h2>Education, certifications and languages</h2>
+  <ul>
+    <li><b>Master's Degree, Computational Complexes, Systems and Networks</b> (Engineer of System Technologies), Saint Petersburg State University of Aerospace Instrumentation, 1993–1999</li>
+    <li><b>Certified Scrum 2.0 practitioner</b></li>
+    <li>European Marketing, Management and IT programme, BHI Human Resources Development GmbH, Germany, 2002</li>
+    <li><b>Languages:</b> English (professional), Russian (native)</li>
+  </ul>
+</main>
+
+<script src="assets/space.js"></script>
+</body>
+</html>
