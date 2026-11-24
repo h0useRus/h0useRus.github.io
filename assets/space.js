@@ -92,9 +92,9 @@
   const orbit = document.querySelector(".orbit");
   if (orbit) {
     const rings = [
-      { size: 0.42, t: 38, rev: false, items: [["C# / .NET", 1], ["Rust", 1], ["ASP.NET Core", 0]] },
-      { size: 0.68, t: 60, rev: true, items: [["Kafka", 1], ["Kubernetes", 1], ["AWS", 0], ["Azure", 0], ["PostgreSQL", 0]] },
-      { size: 0.96, t: 90, rev: false, items: [["React", 0], ["TypeScript", 0], ["Terraform", 0], ["Docker", 0], ["Grafana", 0], ["CI/CD", 0], ["DDD · CQRS", 1]] },
+      { size: 0.62, t: 38, rev: false, items: [["C# / .NET", 1], ["Rust", 1], ["ASP.NET Core", 0]] },
+      { size: 0.8, t: 60, rev: true, items: [["Kafka", 1], ["Kubernetes", 1], ["AWS", 0], ["Azure", 0], ["PostgreSQL", 0]] },
+      { size: 0.98, t: 90, rev: false, items: [["React", 0], ["TypeScript", 0], ["Terraform", 0], ["Docker", 0], ["Grafana", 0], ["CI/CD", 0], ["DDD · CQRS", 1]] },
     ];
     for (const r of rings) {
       const ring = document.createElement("div");
